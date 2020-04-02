@@ -205,7 +205,7 @@ def train(start, num_iterations):
 
             show_progress(i, epoch, acc_tr, loss_tr, acc_valid, loss_valid)
 
-            saver.save(session, args.outputdir + '/cc-predictor-model', global_step=epoch)
+            saver.save(session, args.outputdir + '/binary-predictor-model', global_step=epoch)
 
 
 
