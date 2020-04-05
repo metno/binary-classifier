@@ -57,6 +57,6 @@ if __name__ == "__main__":
             print("")
             #print("%d %s" % (cc_cnn, result[0]))
         else:
-            print(filename + " " + result)  # Error
+            print("ERROR: %s: %d " % (filename,result))  # Error
 
 

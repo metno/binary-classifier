@@ -13,7 +13,7 @@ class Predictor(object):
 
         #sys.stderr.write("Modeldata dircectory: %s\n" % trained_model_dir)
         #model_name =  os.path.basename(os.path.normpath(trained_model_dir))
-        model_name =  "cc-predictor-model"
+        model_name =  "binary-predictor-model"
         sys.stderr.write("Model name: %s\n" % model_name)
         self.model_name = model_name
 

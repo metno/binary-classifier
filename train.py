@@ -23,7 +23,7 @@ import sys
 # It has a MIT licence
 
 # Hyper params
-BATCH_SIZE        = 256
+BATCH_SIZE        = 512
 
 
 #DROPOUT_KEEP_PROB = 0.22
