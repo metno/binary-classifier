@@ -40,8 +40,8 @@ def calc_spread(vector):
     return variance
 
 if isinstance(result, (list, tuple, np.ndarray)):
-    cc_cnn = np.argmax(result[0]) # Array of probabilities
-    sys.stdout.write("%d" % cc_cnn)
+    probs = np.argmax(result[0]) # Array of probabilities
+    sys.stdout.write("%d" % probs)
     if args.with_probs:
         sys.stdout.write(" probabilities: [ ")
         for p in result[0]:

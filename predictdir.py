@@ -46,16 +46,15 @@ if __name__ == "__main__":
         sys.stdout.write(filename + " ")
 
         if isinstance(result, (list, tuple, np.ndarray)):
-            cc_cnn = np.argmax(result[0]) # Array of probabilities
-            sys.stdout.write("%d" % cc_cnn)
+            probs = np.argmax(result[0]) # Array of probabilities
+            sys.stdout.write("%d" % probs)
             if args.with_probs:
                 sys.stdout.write(" probabilities: [ ")
-                for p in result[0]:
+                for p in probs[0]:
                     sys.stdout.write("%0.2f%%, " % (p*100.0))
                 sys.stdout.write(" ]")
                 sys.stdout.write(" spread: %.02f" % calc_spread(result[0]))
             print("")
-            #print("%d %s" % (cc_cnn, result[0]))
         else:
             print("ERROR: %s: %d " % (filename,result))  # Error
 
